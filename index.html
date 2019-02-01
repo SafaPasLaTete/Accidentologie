@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Accidentologie</title>
+    <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <section id="main" class="row">
+            <div class="col-md-3 col-sm-12" id="sidebar">
+                <header>
+                    <h1 id="titre">Accidentologie</h1>
+                </header>
+                <div>
+                    <div id="info" class="text-center">
+                        <img id="route" src="img/cursor.png" />
+                        <img id="reset" src="img/delete.png" />
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="searchadress">Chercher une adresse</label>
+                            <input type="text" class="form-control" id="adresse">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="searchbutton">Envoyer</button>
+                    </form>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block" id="accident"> Afficher tous les Accidents</button>
+                    <h4 id="titre">Filtrer les accidents par :</h4>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block" id="RoutePrincipale">Route
+                            principale</button>
+                        <button type="button" class="btn btn-secondary btn-lg btn-block" id="RouteSecondaire">Route
+                            Secondaire</button>
+                        <button type="button" class="btn btn-secondary btn-lg btn-block" id="Autoroute">Autoroute</button>
+                        <button type="button" class="btn btn-secondary btn-lg btn-block" id="Pietons">Pietons</button>
+                        <button type="button" class="btn btn-secondary btn-lg btn-block" id="Velos">Velos</button>
+                        <h4 id="titre">Afficher d'autres éléments sur la carte :</h4>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block" id="canton">Canton</button>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block" id="Satellite">Satellite</button>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block" id="Police">Police</button>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block" id="routegeneve">Routes principale
+                            de Geneve</button>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-9 col-sm-12">
+                <div id="map"></div>
+                
+                
+            </div>
+        </section>
+        
+
+    </div>
+    <!--/.container-->
+
+
+
+</body>
+<footer id="copyright">
+        <div id="infoacc"></div>    
+</footer>
+
+</html>
